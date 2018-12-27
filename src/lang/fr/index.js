@@ -1,5 +1,5 @@
-import test from './test'
+import welcomeText from './welcome-text'
 
 export default {
-  test
+  welcomeText
 }

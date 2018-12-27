@@ -1,6 +1,7 @@
 <template>
   <div class="welcome-text">
-    <h1>Welcome Text</h1>
+    <h1>{{ $t('welcomeText.title') }}</h1>
+    <div v-html="$t('welcomeText.text')"></div>
   </div>
 </template>
 
