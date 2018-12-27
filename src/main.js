@@ -15,6 +15,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueI18n)
 const i18n = new VueI18n({
   locale: 'en',
+  fallbackLocale: 'en',
   messages,
 })
 
