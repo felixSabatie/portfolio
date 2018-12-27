@@ -1,8 +1,8 @@
 <template>
   <div class="portfolio">
+    <Header></Header>
     <p>{{ $t('test.hello1') }}</p>
     <p>{{ $t('test.hello2') }}</p>
-    <Header></Header>
     <WelcomeText></WelcomeText>
     <About></About>
     <Projects></Projects>
