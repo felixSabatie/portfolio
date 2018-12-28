@@ -1,0 +1,23 @@
+{
+  "title": "Mes projets",
+  "link": "lien",
+  "repository": "répertoire",
+  "demo": "démo",
+  "post": "post",
+  "polyenco": {
+    "title": "Site web de Polyenco",
+    "content": "Site de présentation pour la junior-industrie Polyenco de mon école d'ingénieur Polytech, entièrement conçu et développé par moi-même"
+  },
+  "jsExecutor": {
+    "title": "JS Executor",
+    "content": "Une application web qui permet aux utilisateurs de collaborer sur un fichier javacsript et d'exécuter le code à distance. Fait pour un de mes cours à l'UQAC"
+  },
+  "simpleChat": {
+    "title": "Simple Chat",
+    "content": "Une simple application de chat que j'ai faite pour apprendre à utiliser socket.io, avec de multiples salons de discussion et un design sombre inspiré par messenger de Facebook."
+  },
+  "scrumBattle": {
+    "title": "Scrum Battle",
+    "content": "Une application web basée sur les principes du Kanban, permettant aux utilisateurs de créer et de déplacer des tâches sur un tableau. Lorsqu'une carte est déplacée, des animations montrent à l'utilisateur le nouvel avancement du projet.<br><br>Réalisé au sein d'une équipe de 4 personnes en 48 heures, et gagnant de la code jam CGI 2018. Le thème : <i>'Mettre en œuvre les principes de la gamification au sein d'une équipe de projet'</i>."
+  }
+}
