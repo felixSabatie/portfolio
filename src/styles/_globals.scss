@@ -1,4 +1,5 @@
-@import './colors';
+@import 'colors';
+@import 'variables.scss';
 
 // TODO review font sizes
 html, body {
@@ -26,6 +27,12 @@ html, body {
     font-weight: 500;
     position: relative;
 
+    &:hover {
+      &:after {
+        width: 55px;
+      }
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -37,6 +44,7 @@ html, body {
       background-color: $primaryColorLight;
       margin-top: 10px;
       transform: translateX(-50%);
+      transition: width $transitionsDuration;
     }
   }
   h3 {
@@ -45,6 +53,12 @@ html, body {
     font-size: 20px;
     font-weight: 500;
     position: relative;
+
+    &:hover {
+      &:after {
+        width: 55px;
+      }
+    }
 
     &:after {
       content: '';
@@ -56,12 +70,19 @@ html, body {
       height: 3px;
       background-color: $primaryColorLight;
       margin-top: 10px;
+      transition: width $transitionsDuration;
     }
   }
 
   a {
     text-decoration: none;
     color: $primaryColorLight;
+    font-size: 20px;
+    transition: color $transitionsDuration;
+
+    &:hover {
+      color: $primaryColor;
+    }
   }
 
   .container {
