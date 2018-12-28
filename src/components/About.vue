@@ -53,7 +53,8 @@
       }
 
       .title {
-        padding: 30px 0;
+        margin-top: 30px;
+        margin-bottom: 50px;
       }
 
       .links {
