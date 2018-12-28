@@ -30,8 +30,8 @@
     background-repeat: no-repeat;
     position: relative;
 
-    @media screen and (min-width: $largeSize) {
-      background-size: 100% auto;
+    @media screen and (min-width: $smallSize) {
+      background-size: 100% 1000px;
     }
 
     &:after {
@@ -49,8 +49,8 @@
       background-repeat: no-repeat;
       transform: rotate(180deg);
 
-      @media screen and (min-width: $largeSize) {
-        background-size: 100% auto;
+      @media screen and (min-width: $smallSize) {
+        background-size: 100% 1000px;
       }
     }
   }
