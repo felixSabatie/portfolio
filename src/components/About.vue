@@ -60,7 +60,7 @@
       .links {
         color: $primaryColorLight;
         font-size: calc(#{$icon-size} - 24px);
-        line-height: 60px;
+        line-height: $icon-size;
         text-align: center;
         padding-top: 40px;
         display: flex;
