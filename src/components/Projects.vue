@@ -28,7 +28,7 @@
         </Project>
 
         <Project value="projects.simpleChat" :icons="simpleChatIcons">
-          <img src="../assets/polyenco.png" :alt="$t('projects.polyenco.title')" slot="image" />
+          <img src="../assets/simple-chat.png" :alt="$t('projects.polyenco.title')" slot="image" />
           <div class="links" slot="links">
             <a href="https://github.com/felixSabatie/SimpleChatApp/" target="_blank" class="link">
               <font-awesome-icon :icon="['fab', 'github']" /><span class="text">{{ $t('projects.repository') }}</span>
@@ -37,7 +37,7 @@
         </Project>
 
         <Project value="projects.scrumBattle" :icons="scrumBattleIcons">
-          <img src="../assets/polyenco.png" :alt="$t('projects.polyenco.title')" slot="image" />
+          <img src="../assets/scrum-battle.png" :alt="$t('projects.polyenco.title')" slot="image" />
           <div class="links" slot="links">
             <a href="https://www.youtube.com/watch?v=73hjQVx-ZKc/" target="_blank" class="link">
               <font-awesome-icon :icon="['fab', 'youtube']" /><span class="text">{{ $t('projects.demo') }}</span>
