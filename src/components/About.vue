@@ -30,6 +30,10 @@
   $imageSize: 200px;
   $icon-size: 60px;
 
+  .dark .about-wrapper .about-card {
+    background-color: $darkCardBackgroundColor;
+  }
+
   .about-wrapper {
     @media screen and (min-width: $smallSize) {
       padding: 0 100px;
@@ -38,6 +42,7 @@
     .about-card {
       text-align: center;
       background-color: $cardBackgroundColor;
+      transition: background-color $transitionsDuration;
       padding: 40px;
       border-radius: 10px;
       box-shadow: rgba(0, 0, 0, .3) 3px 3px 10px;

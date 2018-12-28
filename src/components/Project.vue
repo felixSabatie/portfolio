@@ -26,8 +26,13 @@
 
 <style lang="scss">
   @import '../styles/colors';
+  @import '../styles/variables';
 
   $borderRadius: 5px;
+
+  .dark .project {
+    background-color: $darkCardBackgroundColor;
+  }
 
   .project {
     max-width: 350px;
@@ -37,6 +42,7 @@
     display: inline-block;
     box-shadow: rgba(0, 0, 0, .2) 2px 2px 8px;
     background-color: $cardBackgroundColor;
+    transition: background-color $transitionsDuration;
 
     .header {
       width: 100%;

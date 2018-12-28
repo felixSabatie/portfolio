@@ -5,8 +5,9 @@
         <div class="logo"><img src="../assets/logo.svg" alt="Félix Sabatié"></div>
         <div class="title">Félix Sabatié</div>
       </a>
-      <div class="lang-buttons">
-        <div class="lang-button" @click="changeLang(lang.value)">{{ lang.text }}</div>
+      <div class="buttons">
+        <div class="button" @click="changeLang(lang.value)">{{ lang.text }}</div>
+        <div class="button" :class="darkTheme ? 'selected' : ''" @click="toggleDarkTheme">{{ $t('header.dark')}}</div>
       </div>
     </div>
   </div>
@@ -14,6 +15,7 @@
 
 <script>
   export default {
+    props: ['darkTheme'],
     computed: {
       lang() {
         return ((currentLang) => {
@@ -35,6 +37,9 @@
     methods: {
       changeLang(newLang) {
         this.$i18n.locale = newLang
+      },
+      toggleDarkTheme() {
+        this.$emit('toggle-dark-theme')
       }
     }
   }
@@ -57,6 +62,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      white-space: nowrap;
 
       .logo {
         width: 20px;
@@ -75,15 +81,26 @@
       }
     }
 
-    .lang-buttons {
-      .lang-button {
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      .button {
         border: 2px solid $contrastPrimaryColor;
         padding: 5px 25px;
         border-radius: 100px;
         cursor: pointer;
         transition: background-color $transitionsDuration, color $transitionsDuration;
+        margin: 5px 0 5px 10px;
 
         &:hover {
+          background-color: $contrastPrimaryColor;
+          color: $primaryColor;
+        }
+
+        &.selected {
           background-color: $contrastPrimaryColor;
           color: $primaryColor;
         }

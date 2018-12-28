@@ -1,6 +1,6 @@
 <template>
-  <div class="portfolio">
-    <Header></Header>
+  <div class="portfolio" :class="darkTheme ? 'dark' : ''">
+    <Header @toggle-dark-theme="toggleDarkTheme" :dark-theme="darkTheme"></Header>
     <WelcomeText></WelcomeText>
     <About></About>
     <Projects></Projects>
@@ -16,14 +16,35 @@
   import Footer from './Footer'
 
   export default {
-    components: { Header, WelcomeText, About, Projects, Footer }
+    components: { Header, WelcomeText, About, Projects, Footer },
+    data() {
+      return {
+        darkTheme: false
+      }
+    },
+    methods: {
+      toggleDarkTheme() {
+        this.darkTheme = !this.darkTheme
+      }
+    }
   }
 </script>
 
 <style lang="scss">
   @import '../styles/variables';
+  @import '../styles/colors';
 
   .portfolio {
+    color: $textColor;
+    background-color: $backgroundColor;
+    transition: color $transitionsDuration, background-color $transitionsDuration;
+
+    &.dark {
+      color: $darkTextColor;
+      background-color: $darkBackgroundColor;
+    }
+
+    z-index: 1;
     background-image: url('../assets/background.svg');
     background-size: auto;
     background-position: center top;
