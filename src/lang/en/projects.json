@@ -1,3 +1,19 @@
 {
-  "title": "My projects"
+  "title": "My projects",
+  "polyenco": {
+    "title": "Polyenco's website",
+    "content": "Presentation website for the junior industry Polyenco from my engineering school Polytech, design and developed entirely by me"
+  },
+  "jsExecutor": {
+    "title": "JS Executor",
+    "content": "A web application that lets users collaborate on a javacsript file and execute the code remotely. Made for one of my courses at UQAC"
+  },
+  "simpleChat": {
+    "title": "Simple Chat",
+    "content": "A simple chat app that I made to learn how to use socket.io, featuring multiple chat rooms and a dark themed facebook-like design"
+  },
+  "scrumBattle": {
+    "title": "Scrum Battle",
+    "content": "A web application based on the Kanban principles, allowing the users to create and move tasks on a board. When a card is moved, animations show the user the new advancement of the project.<br>Made within a team of 4 in 48 hours, and winner of the 2018 CGI's code jam. The theme : <i>'Implement the principles of gamification into a project team'</i>."
+  }
 }
