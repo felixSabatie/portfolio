@@ -1,5 +1,9 @@
 {
   "title": "My projects",
+  "link": "link",
+  "repository": "repository",
+  "demo": "demo",
+  "post": "post",
   "polyenco": {
     "title": "Polyenco's website",
     "content": "Presentation website for the junior industry Polyenco from my engineering school Polytech, design and developed entirely by me"

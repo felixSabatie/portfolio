@@ -11,15 +11,44 @@
       <div class="projects-container">
         <Project value="projects.polyenco" :icons="polyencoIcons">
           <img src="../assets/polyenco.png" :alt="$t('projects.polyenco.title')" slot="image" />
+          <div class="links" slot="links">
+            <a href="https://junior-polyenco.fr/" target="_blank" class="link">
+              <font-awesome-icon icon="link" /><span class="text">{{ $t('projects.link') }}</span>
+            </a>
+          </div>
         </Project>
+
         <Project value="projects.jsExecutor" :icons="jsExecutorIcons">
           <img src="../assets/js-executor.png" :alt="$t('projects.polyenco.title')" slot="image" />
+          <div class="links" slot="links">
+            <a href="https://github.com/felixSabatie/js-executor/" target="_blank" class="link">
+              <font-awesome-icon :icon="['fab', 'github']" /><span class="text">{{ $t('projects.repository') }}</span>
+            </a>
+          </div>
         </Project>
+
         <Project value="projects.simpleChat" :icons="simpleChatIcons">
           <img src="../assets/polyenco.png" :alt="$t('projects.polyenco.title')" slot="image" />
+          <div class="links" slot="links">
+            <a href="https://github.com/felixSabatie/SimpleChatApp/" target="_blank" class="link">
+              <font-awesome-icon :icon="['fab', 'github']" /><span class="text">{{ $t('projects.repository') }}</span>
+            </a>
+          </div>
         </Project>
+
         <Project value="projects.scrumBattle" :icons="scrumBattleIcons">
           <img src="../assets/polyenco.png" :alt="$t('projects.polyenco.title')" slot="image" />
+          <div class="links" slot="links">
+            <a href="https://www.youtube.com/watch?v=73hjQVx-ZKc/" target="_blank" class="link">
+              <font-awesome-icon :icon="['fab', 'youtube']" /><span class="text">{{ $t('projects.demo') }}</span>
+            </a>
+            <a href="https://www.linkedin.com/feed/update/activity:6466682120529154048/" target="_blank" class="link">
+              <font-awesome-icon :icon="['fab', 'linkedin']" /><span class="text">{{ $t('projects.post') }}</span>
+            </a>
+            <a href="https://github.com/felixSabatie/ScrumBattle/" target="_blank" class="link">
+              <font-awesome-icon :icon="['fab', 'github']" /><span class="text">{{ $t('projects.repository') }}</span>
+            </a>
+          </div>
         </Project>
       </div>
     </div>

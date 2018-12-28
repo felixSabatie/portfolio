@@ -12,6 +12,9 @@
         </div>
       </div>
     </div>
+    <div class="footer">
+      <slot name="links"></slot>
+    </div>
   </div>
 </template>
 
@@ -61,6 +64,24 @@
 
         .icon {
           margin-right: 20px;
+        }
+      }
+    }
+
+    .footer {
+      .links {
+        padding: 20px;
+        border-top: 1px solid $borderColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .link {
+          padding: 10px;
+          .text {
+            margin-left: 10px;
+          }
         }
       }
     }
