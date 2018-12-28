@@ -37,7 +37,7 @@
 
     .about-card {
       text-align: center;
-      background-color: #fff;
+      background-color: $cardBackgroundColor;
       padding: 40px;
       border-radius: 10px;
       box-shadow: rgba(0, 0, 0, .3) 3px 3px 10px;

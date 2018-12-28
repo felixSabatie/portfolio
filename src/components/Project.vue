@@ -35,8 +35,8 @@
     border-radius: $borderRadius;
     text-align: left;
     display: inline-block;
-    background-color: $contrastPrimaryColor;
     box-shadow: rgba(0, 0, 0, .2) 2px 2px 8px;
+    background-color: $cardBackgroundColor;
 
     .header {
       width: 100%;

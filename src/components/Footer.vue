@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer container">
     <img class="logo" src="../assets/logo.svg" alt="Félix Sabatié">
     <p class="copyright">Copyright © 2019 Félix Sabatié</p>
     <p class="repository">{{ $t('footer.footer') }}</p>
