@@ -8,7 +8,9 @@
         <h2 class="title">{{ $t('about.title') }}</h2>
         <div class="content">{{ $t('about.text') }}</div>
         <div class="links">
-
+          <a class="icon" href="https://www.linkedin.com/in/felix-sabatie/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+          <a class="icon" href="https://github.com/felixSabatie" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a>
+          <a class="icon" href="mailto:felix.sabatie@gmail.com"><font-awesome-icon icon="envelope" /></a>
         </div>
       </div>
     </div>
@@ -22,8 +24,11 @@
 </script>
 
 <style lang="scss">
+  @import '../styles/colors';
+  @import '../styles/variables';
 
   $imageSize: 200px;
+  $icon-size: 60px;
 
   .about-wrapper {
     padding: 0 100px;
@@ -49,6 +54,33 @@
 
       .title {
         padding: 30px 0;
+      }
+
+      .links {
+        color: $primaryColorLight;
+        font-size: calc(#{$icon-size} - 24px);
+        line-height: 60px;
+        text-align: center;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .icon {
+          width: $icon-size;
+          height: $icon-size;
+          margin: 0 20px;
+          border: 1px solid $primaryColorLight;
+          border-radius: 50%;
+          transition: background-color $transitionsDuration, color $transitionsDuration;
+
+          &:hover {
+            background-color: $primaryColorLight;
+            color: $contrastPrimaryColor;
+            cursor: pointer;
+          }
+        }
       }
     }
   }
