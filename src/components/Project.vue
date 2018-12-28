@@ -33,7 +33,7 @@
     text-align: left;
     display: inline-block;
     background-color: $contrastPrimaryColor;
-    box-shadow: rgba(0, 0, 0, .3) 3px 3px 10px;
+    box-shadow: rgba(0, 0, 0, .2) 2px 2px 8px;
 
     .header {
       width: 100%;

@@ -59,10 +59,10 @@
   @import '../styles/colors';
 
   .projects-wrapper {
-    margin-top: 80px;
 
     .projects-title {
       text-align: center;
+      margin: 80px 0;
 
       .icon {
         margin: 20px auto;
@@ -79,7 +79,7 @@
     .projects-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       align-items: flex-start;
       flex-wrap: wrap;
     }
