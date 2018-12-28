@@ -69,6 +69,7 @@
     }
 
     .footer {
+      padding: 0;
       .links {
         padding: 20px;
         border-top: 1px solid $borderColor;
