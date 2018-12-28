@@ -31,7 +31,9 @@
   $icon-size: 60px;
 
   .about-wrapper {
-    padding: 0 100px;
+    @media screen and (min-width: $smallSize) {
+      padding: 0 100px;
+    }
 
     .about-card {
       text-align: center;

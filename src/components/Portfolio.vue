@@ -21,12 +21,18 @@
 </script>
 
 <style lang="scss">
+  @import '../styles/variables';
+
   .portfolio {
     background-image: url('../assets/background.svg');
-    background-size: 100% auto;
+    background-size: auto;
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
+
+    @media screen and (min-width: $largeSize) {
+      background-size: 100% auto;
+    }
 
     &:after {
       content: '';
@@ -38,10 +44,14 @@
       z-index: -1;
 
       background-image: url('../assets/background.svg');
-      background-size: 100% auto;
+      background-size: auto;
       background-position: center top;
       background-repeat: no-repeat;
       transform: rotate(180deg);
+
+      @media screen and (min-width: $largeSize) {
+        background-size: 100% auto;
+      }
     }
   }
 </style>
