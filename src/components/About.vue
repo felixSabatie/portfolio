@@ -30,7 +30,7 @@
   $imageSize: 200px;
   $icon-size: 60px;
 
-  .dark .about-wrapper .about-card {
+  .dark .about-wrapper .about-card:before {
     background-color: $darkCardBackgroundColor;
   }
 
@@ -40,12 +40,25 @@
     }
 
     .about-card {
+      position: relative;
       text-align: center;
-      background-color: $cardBackgroundColor;
-      transition: background-color $transitionsDuration;
       padding: 40px;
       border-radius: 10px;
       box-shadow: rgba(0, 0, 0, .3) 3px 3px 10px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $cardBackgroundColor;
+        z-index: -1;
+        border-radius: 10px;
+        opacity: $cardsOpacity;
+        transition: background-color $transitionsDuration;
+      }
 
       .image {
         width: $imageSize;

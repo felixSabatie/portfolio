@@ -30,19 +30,32 @@
 
   $borderRadius: 5px;
 
-  .dark .project {
+  .dark .project:before {
     background-color: $darkCardBackgroundColor;
   }
 
   .project {
+    position: relative;
     max-width: 350px;
     margin: 20px;
     border-radius: $borderRadius;
     text-align: left;
     display: inline-block;
     box-shadow: rgba(0, 0, 0, .2) 2px 2px 8px;
-    background-color: $cardBackgroundColor;
-    transition: background-color $transitionsDuration;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $cardBackgroundColor;
+      z-index: -1;
+      border-radius: $borderRadius;
+      opacity: $cardsOpacity;
+      transition: background-color $transitionsDuration;
+    }
 
     .header {
       width: 100%;

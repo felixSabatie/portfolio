@@ -44,7 +44,7 @@
       background-color: $darkBackgroundColor;
     }
 
-    z-index: 1;
+    z-index: 0;
     background-image: url('../assets/background.svg');
     background-size: auto;
     background-position: center top;
@@ -62,7 +62,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: -1;
+      z-index: -100;
 
       background-image: url('../assets/background.svg');
       background-size: auto;
