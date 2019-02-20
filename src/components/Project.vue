@@ -30,8 +30,14 @@
 
   $borderRadius: 5px;
 
-  .dark .project:before {
-    background-color: $darkCardBackgroundColor;
+  .dark {
+    .project .content .icons .icon {
+      color: #D0D0D0;
+    }
+
+    .project:before {
+      background-color: $darkCardBackgroundColor;
+    }
   }
 
   .project {
@@ -50,7 +56,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: $cardBackgroundColor;
+      background-color: $cardBackgroundColor;
       z-index: -1;
       border-radius: $borderRadius;
       opacity: $cardsOpacity;
@@ -78,11 +84,16 @@
         padding: 30px 0;
         display: flex;
         flex-direction: row;
-        color: $accentColor;
         font-size: 30px;
 
         .icon {
           margin-right: 20px;
+          transition: color $transitionsDuration;
+          color: #909090;
+
+          &:hover {
+            color: $accentColor;
+          }
         }
       }
     }
