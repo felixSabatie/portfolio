@@ -19,5 +19,9 @@
   "scrumBattle": {
     "title": "Scrum Battle",
     "content": "Une application web basée sur les principes du Kanban, permettant aux utilisateurs de créer et de déplacer des tâches sur un tableau. Lorsqu'une carte est déplacée, des animations montrent à l'utilisateur le nouvel avancement du projet.<br><br>Réalisé au sein d'une équipe de 4 personnes en 48 heures, et gagnant de la code jam CGI 2018. Le thème : <i>'Mettre en œuvre les principes de la gamification au sein d'une équipe de projet'</i>."
+  },
+  "grocery": {
+    "title": "Grocery",
+    "content": "Une application multi plateforme faite avec react-native. Faite pour un client dans une équipe de 3, cette application permet aux utilisateurs de commander de la nourriture en livraison. <br><br>Malheureusement notre client a fait faillite et l'application n'est plus disponible"
   }
 }

@@ -7,7 +7,7 @@
       <h3 class="title">{{ $t(value + '.title') }}</h3>
       <div class="description" v-html="$t(value + '.content')"></div>
       <div class="icons">
-        <div class="icon" v-for="icon in icons" v-bind:key="icon[1]">
+        <div class="icon" v-for="icon in icons" v-bind:key="icon[1]" :title="icon[1]">
           <font-awesome-icon :icon="icon" />
         </div>
       </div>
