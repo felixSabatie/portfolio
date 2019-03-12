@@ -10,11 +10,11 @@
   },
   "jsExecutor": {
     "title": "JS Executor",
-    "content": "Une application web qui permet aux utilisateurs de collaborer sur un fichier javacsript et d'exécuter le code à distance. Fait pour un de mes cours à l'UQAC"
+    "content": "Une application web qui permet aux utilisateurs de collaborer sur un fichier javacsript et d'exécuter le code à distance. Réalisé pour un de mes cours à l'UQAC"
   },
   "simpleChat": {
     "title": "Simple Chat",
-    "content": "Une simple application de chat que j'ai faite pour apprendre à utiliser socket.io, avec de multiples salons de discussion et un design sombre inspiré par messenger de Facebook."
+    "content": "Une simple application de chat que j'ai réalisée pour apprendre à utiliser socket.io, avec de multiples salons de discussion et un design sombre inspiré par messenger de Facebook."
   },
   "scrumBattle": {
     "title": "Scrum Battle",
@@ -22,6 +22,10 @@
   },
   "grocery": {
     "title": "Grocery",
-    "content": "Une application multi plateforme faite avec react-native. Faite pour un client dans une équipe de 3, cette application permet aux utilisateurs de commander de la nourriture en livraison. <br><br>Malheureusement notre client a fait faillite et l'application n'est plus disponible"
+    "content": "Une application multi plateforme développée avec react-native. Réalisée pour un client dans une équipe de 3, cette application permet aux utilisateurs de commander de la nourriture en livraison. <br><br>Malheureusement notre client a fait faillite et l'application n'est plus disponible"
+  },
+  "afterworker": {
+    "title": "Afterworker (en cours de réalisation)",
+    "content": "Une application web permettant de simplifier l'organisation d'événement, en permettant aux utilisateurs de décider du lieu et de la date par le biais d'un vote. Cette application utilise ruby on rails, ainsi que nodejs et mongodb pour le chat. J'ai réalisé ce projet en utilisant gitlab comme un outil d'intégration continue et d'organisation scrum. Design réalisé sur Adobe XD"
   }
 }

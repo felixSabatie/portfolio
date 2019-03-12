@@ -23,5 +23,9 @@
   "grocery": {
     "title": "Grocery",
     "content": "A multi platform mobile application made with react-native. Made for a client in a team of 3, this app allows the users to order food for delivery. <br><br>Unfortunately our client went bankrupt and the app is no longer available"
+  },
+  "afterworker": {
+    "title": "Afterworker (work in progress)",
+    "content": "A web application that simplifies the organization of events, by allowing the users to decide on the place and the date through a poll. This app uses ruby on rails as well as nodejs and mongodb for the chat. I made this project using gitlab as a CI/CD and scrum tool. Design made using Adobe XD"
   }
 }

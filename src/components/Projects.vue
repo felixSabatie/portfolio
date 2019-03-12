@@ -42,6 +42,18 @@
           </div>
         </Project>
 
+        <Project value="projects.afterworker" :icons="afterworkerIcons">
+          <img src="../assets/afterworker.png" :alt="$t('projects.afterworker.title')" slot="image" />
+          <div class="links" slot="links">
+            <a href="https://gitlab.com/felixSabatie/afterworker" target="_blank" class="link">
+              <font-awesome-icon :icon="['fab', 'gitlab']" /><span class="text">{{ $t('projects.repository') }}</span>
+            </a>
+            <a href="https://afterworker.herokuapp.com/" target="_blank" class="link">
+              <font-awesome-icon icon="link" /><span class="text">{{ $t('projects.link') }}</span>
+            </a>
+          </div>
+        </Project>
+
         <Project value="projects.jsExecutor" :icons="jsExecutorIcons">
           <img src="../assets/js-executor.png" :alt="$t('projects.polyenco.title')" slot="image" />
           <div class="links" slot="links">
@@ -94,6 +106,13 @@
         scrumBattleIcons: [
           ['fab', 'laravel'],
           ['fab', 'vuejs'],
+        ],
+        afterworkerIcons: [
+          ['fab', 'angular'],
+          ['fas', 'gem'],
+          ['fab', 'docker'],
+          ['fab', 'gitlab'],
+          ['fab', 'node'],
         ],
       }
     }
